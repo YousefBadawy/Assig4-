@@ -1,0 +1,22 @@
+
+Heapify Functions (heapifymax and heapifymin):
+
+Each call to heapifymax or heapifymin has a time complexity of O(log N), where N is the number of elements in the heap. This is because it traverses the height of the heap.
+The Build_Max_Heap and Build_Min_Heap functions have a time complexity of O(N), where N is the number of elements in the array. This is because they iterate through each non-leaf node and call heapify.
+The overall time complexity for building a max heap and min heap is O(N log N).
+File Reading Functions (numberOfLines and file_to_array):
+
+numberOfLines: The time complexity is O(N), where N is the number of lines in the file. This is because it reads each line once.
+file_to_array: The time complexity is O(N), where N is the number of lines in the file. This is because it reads each line once and inserts data into the array.
+Analysis Functions (getMean, getHighest, getLowest, MaximumSubsequenceSum, copyArray):
+
+These functions mainly involve iterating through the array, performing arithmetic operations, and printing results. Their time complexity is O(N), where N is the size of the array.
+Main Function:
+
+The main function involves calling other functions in a loop. The loop runs until the user decides to exit. The time complexity of the main loop is O(M * N), where M is the number of iterations and N is the size of the array.
+Total Complexity:
+
+The dominant factor in your implementation is the heap operations. Therefore, the overall time complexity is O(M * N * log N), where M is the number of iterations and N is the size of the array.
+Space Complexity:
+
+The space complexity is primarily determined by the size of the arrays, and it is O(N), where N is the size of the array.
